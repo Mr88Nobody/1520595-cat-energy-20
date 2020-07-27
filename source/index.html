@@ -34,32 +34,36 @@
       <h1 class="visually-hidden">Cat Energy - интернет-магазин питания для кошек</h1>
 
       <section class="promo">
-        <h2 class="promo__headline headline">Функциональное питание для котов</h2>
+        <h2 class="promo__headline">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__pic" src="img/index-can-mobile@1x.png" alt="Корм Cat Energy Курица" width="280" height="270">
-        <a href="program.html"><button class="promo__button button">Подобрать программу</button></a>
+        <a class="promo__link" href="program.html"><button class="promo__button button">Подобрать программу</button></a>
       </section>
 
       <section class="program">
-        <h2 class="program__headline program__headline--slim">Похудение</h2>
-        <p class="program__text">
-          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-        </p>
-        <a class="program__link" href="#">Каталог Slim</a>
+        <div class="program__wrapper">
+          <h2 class="program__headline program__headline--slim">Похудение</h2>
+          <p class="program__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="program__link" href="#">Каталог Slim</a>
+        </div>
       </section>
       <section class="program">
-        <h2 class="program__headline program__headline--gain">Набор массы</h2>
-        <p class="program__text">
-          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-          поможет вашему коту нарастить необходимые мышцы!
-        </p>
-        <a class="program__link" href="#">Каталог Slim</a>
+        <div class="program__wrapper">
+          <h2 class="program__headline program__headline--gain">Набор массы</h2>
+          <p class="program__text">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="program__link" href="#">Каталог Pro</a>
+        </div>
       </section>
 
       <section class="desc">
         <h2 class="visually-hidden">Описание программы питания</h2>
-        <b class="desc__headline headline">Как это работает</b>
+        <b class="desc__headline">Как это работает</b>
         <ul class="desc__list">
           <li class="desc__item desc__item--healthy">
             <p class="desc__text">
@@ -86,8 +90,8 @@
 
       <section class="example">
         <h2 class="visually-hidden">Пример похудения кота Бориса</h2>
-        <div class="example__wrapper slider">
-          <b class="example__headline headline">Живой пример</b>
+        <div class="example__wrapper">
+          <b class="example__headline">Живой пример</b>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
             на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
@@ -114,16 +118,18 @@
           <p class="example__costs">
             Затраты на питание: 15000 руб.
           </p>
-          <div class="example__list slider__list">
-            <div class="example__item slider__item">
-              <img class="example__pic--fat" src="img/before-mobile@1x.png" alt="Кот Борис Толстый" width="320" height="240">
+        </div>
+        <div class="example__slider slider">
+          <div class="slider__list">
+            <div class="slider__item">
+              <img class="slider__pic--fat" src="img/before-mobile@1x.png" alt="Кот Борис Толстый" width="320" height="240">
             </div>
-            <div class="example__item slider__item">
-              <img class="example__pic--slim" src="img/after-mobile@1x.png" alt="Кот Борис Худой" width="320" height="240">
+            <div class="slider__item">
+              <img class="slider__pic--slim" src="img/after-mobile@1x.png" alt="Кот Борис Худой" width="320" height="240">
             </div>
-            <button class="example__button example__button--before" type="button">Было</button>
-            <img class="example__range" src="https://via.placeholder.com/150x150" width="84" height="14">
-            <button class="example__button example__button--after" type="button">Стало</button>
+            <button class="slider__button slider__button--before" type="button">Было</button>
+            <img class="slider__range" src="https://via.placeholder.com/150x150" width="84" height="14">
+            <button class="slider__button slider__button--after" type="button">Стало</button>
           </div>
         </div>
       </section>
@@ -131,13 +137,11 @@
       <footer class="page-footer">
         <div class="page-footer__contacts contacts">
           <div class="contacts__wrapper">
-            <p class="contacts__text">
               <b class="contacts__offer">Приглашаем к сотрудничеству дилеров!</b>
               <p class="contacts__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
-            </p>
-            <div class="contacts__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594987271857!5m2!1sru!2sru" width="100%" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594987271857!5m2!1sru!2sru" width="100%" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
         <div class="page-footer__wrapper">

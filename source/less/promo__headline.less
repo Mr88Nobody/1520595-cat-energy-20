@@ -1,9 +1,29 @@
 .promo__headline {
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: @white;
 
   width: 249px;
-  height: 72px;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @black;
+
+    width: 414px;
+
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    margin-bottom: 40px;
+    margin-top: 114px;
+  }
 }

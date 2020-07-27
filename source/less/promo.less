@@ -2,8 +2,29 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 100%;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 651px;
+    padding-left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1140px;
+    padding-left: 80px;
+    min-height: 595px;
+  }
 }

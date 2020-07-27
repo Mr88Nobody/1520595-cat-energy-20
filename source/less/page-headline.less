@@ -5,9 +5,27 @@
   line-height: 36px;
   text-transform: none;
   color: @black;
+  width: 280px;
+  margin: 0 auto;
 
   &--catalog {
     border-top: 1px solid @light-grey;
     border-bottom: 1px solid @light-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    width: 708px;
+    margin-top: 65px;
+
+    &--catalog {
+      border: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }

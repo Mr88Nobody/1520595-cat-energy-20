@@ -1,7 +1,16 @@
 .program {
   width: 280px;
-  margin-top: 22px;
-  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
 
   background-color: @grey-f;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
