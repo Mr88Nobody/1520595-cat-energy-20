@@ -1,7 +1,17 @@
 .program {
   width: 280px;
-  margin-top: 22px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
 
-  background-color: @grey-f;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

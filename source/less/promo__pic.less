@@ -2,4 +2,23 @@
   width: 280px;
   height: 270px;
   margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 651px;
+    height: 609px;
+    margin: 0 auto;
+    order: 1;
+    position: absolute;
+    top: 341px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    padding: 0;
+    order: 1;
+    position: absolute;
+    top: 32px;
+    right: 220px;
+  }
 }

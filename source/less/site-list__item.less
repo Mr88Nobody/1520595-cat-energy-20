@@ -3,11 +3,18 @@
   font-size: 20px;
   line-height: 20px;
 
-  list-style: none;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
 
-  & a {
-    text-decoration: none;
+    &:nth-child(2) {
+      margin-left: 33px;
+      margin-right: 36px;
+    }
+  }
 
-    color: @black;
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

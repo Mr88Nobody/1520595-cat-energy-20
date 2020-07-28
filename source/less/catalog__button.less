@@ -2,9 +2,19 @@
   line-height: 0;
 
   &--all {
+    line-height: 40px;
     text-decoration: none;
     color: @grey;
-
     background-color: @grey-f;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--extra {
+      width: 632px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
   }
 }

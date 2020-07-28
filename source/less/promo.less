@@ -1,9 +1,43 @@
 .promo {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      width: 100vw;
+      height: 305px;
+      top: 0;
+      background: @green url("../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 651px;
+    min-height: 872px;
+    padding-left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1140px;
+    padding-left: 80px;
+    min-height: 595px;
+    position: relative;
+  }
 }

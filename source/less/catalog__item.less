@@ -1,5 +1,27 @@
 .catalog__item {
-  list-style: none;
+  min-height: 190px;
 
-  border-bottom: 1px solid @light-grey;
+  &--all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 430px;
+    width: 324px;
+    margin-top: 140px;
+    text-align: center;
+
+    background-color: @grey-f;
+
+    &--all {
+      background: none;
+      border: 2px solid @grey-f;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
