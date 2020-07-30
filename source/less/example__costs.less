@@ -1,3 +1,18 @@
 .example__costs {
   font-size: 14px;
+  line-height: 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    min-height: 77px;
+    text-align: right;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
 }
