@@ -6,4 +6,26 @@
   font-size: 12px;
   line-height: 12px;
   color: @grey;
+
+  width: 87px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -10px;
+
+  background-color: @grey-e;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+
+    width: auto;
+    bottom: -10px;
+    padding: 5px 8px 7px 8px;
+
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey-f;
+  }
 }

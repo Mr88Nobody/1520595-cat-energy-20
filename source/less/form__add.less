@@ -1,7 +1,19 @@
 .form__add {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 61px;
+  }
 }

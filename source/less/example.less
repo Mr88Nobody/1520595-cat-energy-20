@@ -1,4 +1,13 @@
 .example {
   margin: 0 auto;
   background-color: @grey-e;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey-f;
+    margin-top: 191px;
+  }
 }

@@ -2,7 +2,18 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
 
   border: none;
-  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    border: 1px solid @grey-i;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+  }
 }
