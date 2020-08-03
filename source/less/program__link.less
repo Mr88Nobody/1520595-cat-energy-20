@@ -1,11 +1,71 @@
 .program__link {
+  display: inline-block;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: @black;
+  margin-top: 15px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 100px;
+    width: 22px;
+    height: 18px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 100px;
+    width: 32px;
+    height: 18px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 5px;
+      left: 130px;
+      width: 22px;
+      height: 18px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 5px;
+      left: 130px;
+      width: 32px;
+      height: 18px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }

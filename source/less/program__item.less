@@ -2,12 +2,16 @@
   width: 280px;
   margin-bottom: 20px;
   min-height: 266px;
-
   background-color: @grey-f;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 372px;
     width: 708px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
