@@ -5,14 +5,16 @@
   position: relative;
   width: 100%;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: -40vw;
-    width: 1000vw;
-    height: 1px;
-    background-color: @grey-menu;
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -40vw;
+      width: 1000vw;
+      height: 1px;
+      background-color: @grey-menu;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -24,10 +26,6 @@
     &:nth-child(2) {
       margin-left: 34px;
       margin-right: 36px;
-    }
-
-    &::before {
-      content: none;
     }
 
     &--active {

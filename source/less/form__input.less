@@ -4,14 +4,31 @@
   font-size: 16px;
   line-height: 18px;
   color: @grey;
-
+  width: 100%;
   margin-left: 13px;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
+  outline: none;
   border: 1px solid @grey-i;
-  box-sizing: border-box;
-  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @special-grey;
+  }
+
+  &:focus {
+    border: 2px solid @grey;
+  }
+
+  &:active {
+    border: 2px solid @grey;
+  }
+
+  &:invalid:required:not(:placeholder-shown) {
+    border: 2px solid @error;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
