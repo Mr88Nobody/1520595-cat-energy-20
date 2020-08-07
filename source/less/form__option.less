@@ -4,8 +4,31 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-
   border: none;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 200vw;
+      top: 0;
+      left: -40vw;
+      height: 1px;
+      background-color: @light-grey;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200vw;
+      bottom: 0;
+      left: -40vw;
+      height: 1px;
+      background-color: @light-grey;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     border-bottom: none;

@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Подбор программы Кэт энерджи</title>
     <link rel="stylesheet" href="css\style.css">
   </head>
@@ -17,13 +17,13 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item  site-list__item--active">
               <a class="site-list__link" href="program.html">Подбор программы</a>
             </li>
           </ul>
@@ -45,9 +45,12 @@
               <label class="form__label form__label--cat-data" for="cat-age">Возраст(лет):<input class="form__input" type="number" id="cat-age" name="cat-age" placeholder="7"></label>
             </div>
             <div class="form__option">
-              <label class="form__label form__label--cat-prog" for="cat-slim"><input class="form__radio" type="radio" id="cat-slim" name="mass-option" value="1" checked>Похудение</label>
-              <label class="form__label form__label--cat-prog" for="cat-gain"><input class="form__radio" type="radio" id="cat-gain" name="mass-option" value="2">Набор массы</label>
-              <label class="form__label form__label--cat-prog" for="cat-advice"><input class="form__radio" type="radio" id="cat-advice" name="mass-option" value="3">Не знаю (Нужен ваш совет)</label>
+              <input class="form__radio" type="radio" id="cat-slim" name="mass-option" value="1" checked>
+              <label class="form__label form__label--cat-prog" for="cat-slim">Похудение</label>
+              <input class="form__radio" type="radio" id="cat-gain" name="mass-option" value="2">
+              <label class="form__label form__label--cat-prog" for="cat-gain">Набор массы</label>
+              <input class="form__radio" type="radio" id="cat-advice" name="mass-option" value="3">
+              <label class="form__label form__label--cat-prog" for="cat-advice">Не знаю (Нужен ваш совет)</label>
             </div>
             </div>
             <h2 class="form__title form__title--contacts">Контактные данные (владельца кота)</h2>
@@ -61,10 +64,14 @@
             </div>
             <h2 class="form__title form__title--add">Дополнительно</h2>
             <div class="form__add">
-              <label class="form__label form__label--add" for="sugar"><input class="form__check" type="checkbox" id="sugar" name="sugar" value="1" checked>Сахарозаменитель</label>
-              <label class="form__label form__label--add" for="water"><input class="form__check" type="checkbox" id="water" name="water" value="1">Питьевая вода</label>
-              <label class="form__label form__label--add" for="milk"><input class="form__check" type="checkbox" id="milk" name="milk" value="1">Молоко</label>
-              <label class="form__label form__label--add" for="vit"><input class="form__check" type="checkbox" id="vit" name="vit" value="1">Витамины</label>
+              <input class="form__check" type="checkbox" id="sugar" name="sugar" value="1" checked>
+              <label class="form__label form__label--add" for="sugar">Сахарозаменитель</label>
+              <input class="form__check" type="checkbox" id="water" name="water" value="1">
+              <label class="form__label form__label--add" for="water">Питьевая вода</label>
+              <input class="form__check" type="checkbox" id="milk" name="milk" value="1">
+              <label class="form__label form__label--add" for="milk">Молоко</label>
+              <input class="form__check" type="checkbox" id="vit" name="vit" value="1">
+              <label class="form__label form__label--add" for="vit">Витамины</label>
             </div>
             <div class="form__sub">
               <button class="form__button button" type="submit">Отправить заявку</button>

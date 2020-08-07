@@ -9,15 +9,47 @@
   margin-bottom: 35px;
   margin-top: 28px;
 
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    left: 248px;
+    top: 50%;
+    background-color: @green;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     width: 708px;
     margin-top: 68px;
     margin-bottom: 80px;
+    padding-left: 37px;
+
+    &::after {
+      left: 411px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      left: -100vw;
+      top: 50%;
+      background-color: @green;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    padding: 0;
+
+    &::before {
+      left: calc(-100vw - 40px);
+    }
   }
 }

@@ -5,13 +5,106 @@
   line-height: 37px;
   text-transform: uppercase;
   color: @black;
-  text-align: center;
   margin-top: 30px;
+  margin-left: 71px;
+  margin-bottom: 29px;
+  position: relative;
+
+  &--slim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -11px;
+    left: -64px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--gain::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: -81px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
     margin-top: 77px;
     margin-bottom: 24px;
+
+    &--slim::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 4px;
+      left: 420px;
+      width: 140px;
+      height: 192px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--gain::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 58px;
+      left: 355px;
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 162px;
+    margin-top: 77px;
+    margin-bottom: 73px;
+
+    &--slim::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: -36px;
+      left: -147px;
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--gain::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: -10px;
+      left: -181px;
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }

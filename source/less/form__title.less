@@ -6,33 +6,74 @@
   text-transform: none;
   margin-top: 26px;
   margin-bottom: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    left: 202px;
+    top: 16px;
+    background-color: @green;
+  }
 
   &--comment {
     margin-top: 0;
     margin-bottom: 34px;
+
+    &::after {
+      left: 143px;
+    }
   }
 
   &--add {
     margin-top: 27px;
     margin-bottom: 34px;
+
+    &::after {
+      left: 165px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      left: calc(-100vw - 39px);
+      top: 50%;
+      background-color: @green;
+    }
+
     &--contacts {
       margin-top: 75px;
       margin-bottom: 76px;
+
+      &::after {
+        left: 554px;
+      }
     }
 
     &--comment {
       margin-bottom: 76px;
+
+      &::after {
+        left: 220px;
+      }
     }
 
     &--add {
       margin-top: 65px;
       margin-bottom: 57px;
+
+      &::after {
+        left: 252px;
+      }
     }
   }
 

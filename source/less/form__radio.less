@@ -1,15 +1,17 @@
 .form__radio {
-  margin: 0;
-  padding: 0;
-  margin-right: 15px;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+  display: none;
 
-  @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
-    margin-left: 28px;
-    margin-right: 20px;
+  &:checked + .form__label--cat-prog::after {
+    transform: scale(1);
+  }
+
+  & + .form__label--cat-prog:hover::before {
+    border-color: @radio-hover;
+  }
+
+  & + .form__label--cat-prog:active::before,
+  & + .form__label--cat-prog:active::after,
+  & + .form__label--cat-prog:active {
+    opacity: 0.3;
   }
 }

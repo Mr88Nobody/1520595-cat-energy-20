@@ -1,0 +1,29 @@
+.extra__gift-wrapper {
+  min-height: 289px;
+  width: 280px;
+  margin: 0 auto;
+
+  background: @background url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    min-height: 200px;
+
+    background: @background url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+
+    background: @background url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,14 +1,17 @@
 .form__check {
-  width: 30px;
-  height: 30px;
-  margin: 0;
-  padding: 0;
+  display: none;
 
-  margin-right: 16px;
-  vertical-align: middle;
+  &:checked + .form__label--add::after {
+    transform: scale(1);
+  }
 
-  @media (min-width: @tablet-width) {
-    width: 40px;
-    height: 40px;
+  & + .form__label--add:hover::before {
+    border-color: @radio-hover;
+  }
+
+  & + .form__label--add:active::before,
+  & + .form__label--add:active::after,
+  & + .form__label--add:active {
+    opacity: 0.3;
   }
 }

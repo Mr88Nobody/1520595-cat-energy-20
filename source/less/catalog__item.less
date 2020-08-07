@@ -2,17 +2,45 @@
   padding: 0;
   padding-bottom: 25px;
 
-
   &--all {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -40vw;
+      width: 200vw;
+      height: 1px;
+      background-color: @grey-h;
+    }
+
+    &--all {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -40vw;
+        width: 200vw;
+        height: 1px;
+        background-color: @grey-h;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 430px;
     width: 324px;
     margin-top: 140px;
+    padding: 0;
     text-align: center;
     background-color: @grey-f;
 
