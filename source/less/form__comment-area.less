@@ -18,15 +18,20 @@
   }
 
   &:focus {
-    border: 2px solid @grey;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0 2px @grey;
+    animation-name: outline;
+    animation-duration: 2s;
   }
 
   &:active {
-    border: 2px solid @grey;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0 2px @grey;
+    animation-name: outline;
+    animation-duration: 2s;
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     height: 174px;
     padding-left: 19px;
     padding-top: 10px;
