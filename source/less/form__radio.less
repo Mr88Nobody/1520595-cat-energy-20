@@ -1,8 +1,20 @@
 .form__radio {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
   &:checked + .form__label--cat-prog::after {
     transform: scale(1);
+    animation-name: chpunk;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
   }
 
   & + .form__label--cat-prog:hover::before {

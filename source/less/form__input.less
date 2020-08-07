@@ -10,6 +10,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
   outline: none;
+  border-radius: 0;
   border: 1px solid @grey-i;
   background-color: transparent;
   cursor: pointer;
@@ -19,15 +20,21 @@
   }
 
   &:focus {
-    border: 2px solid @grey;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0 2px @grey;
+    animation-name: outline;
+    animation-duration: 2s;
   }
 
   &:active {
-    border: 2px solid @grey;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 0 2px @grey;
+    animation-name: outline;
+    animation-duration: 2s;
   }
 
   &:invalid:required:not(:placeholder-shown) {
-    border: 2px solid @error;
+    box-shadow: inset 0 0 0 2px @error;
   }
 
   @media (min-width: @tablet-width) {
