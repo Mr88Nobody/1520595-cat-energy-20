@@ -31,6 +31,7 @@
 
     &::after {
       left: 411px;
+      top: 25px;
     }
 
     &::before {
@@ -39,17 +40,23 @@
       width: 100vw;
       height: 2px;
       left: -100vw;
-      top: 50%;
+      top: 25px;
       background-color: @green;
     }
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    margin-top: 76px;
+    margin-bottom: 81px;
     padding: 0;
 
     &::before {
       left: calc(-100vw - 40px);
+    }
+
+    &::after {
+      left: 373px;
     }
   }
 }

@@ -39,10 +39,15 @@
   @media (min-width: @tablet-width) {
     min-height: 430px;
     width: 324px;
-    margin-top: 140px;
+    margin-bottom: 140px;
     padding: 0;
     text-align: center;
     background-color: @grey-f;
+
+    &:nth-last-child(2),
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
 
     &--all {
       background: none;
@@ -52,5 +57,10 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    margin: 0;
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 145px;
+    }
   }
 }
