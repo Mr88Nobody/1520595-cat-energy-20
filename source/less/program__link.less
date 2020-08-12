@@ -31,9 +31,7 @@
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-position: center;
     background-repeat: no-repeat;
-    animation-name: arrow;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
+    transition-duration: 0.6s;
   }
 
   &:active {
@@ -46,29 +44,13 @@
     margin: 0;
 
     &::after {
-      position: absolute;
-      content: "";
-      display: block;
       top: 5px;
       left: 130px;
-      width: 22px;
-      height: 18px;
-      background-image: url("../img/icon-right-arrow-long.svg");
-      background-position: center;
-      background-repeat: no-repeat;
     }
 
     &:hover::after {
-      position: absolute;
-      content: "";
-      display: block;
       top: 5px;
       left: 130px;
-      width: 32px;
-      height: 18px;
-      background-image: url("../img/icon-right-arrow-verylong.svg");
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }

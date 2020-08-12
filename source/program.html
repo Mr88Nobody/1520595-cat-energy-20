@@ -88,7 +88,7 @@
       <footer class="page-footer">
         <div class="page-footer__contacts page-footer__contacts--other contacts">
           <div class="contacts__wrapper">
-              <p class="contacts__offer">Приглашаем к сотрудничеству дилеров!</p>
+              <p class="contacts__offer">Приглашаем<br>к сотрудничеству дилеров!</p>
               <p class="contacts__address">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</p>
           </div>
           <div class="contacts__map">
@@ -130,8 +130,16 @@
             </ul>
           </div>
           <div class="page-footer__copy copy">
-            <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <img class="copy__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+            <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <div class="copy__wrapper">
+                <span>HTML Academy</span>
+                <span>
+                  <svg class="copy__logo" width="27" height="34">
+                    <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                  </svg>
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </footer>
