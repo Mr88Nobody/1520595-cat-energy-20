@@ -10,10 +10,17 @@
     text-align: right;
     margin: 0;
     padding-top: 10px;
+
+    & span {
+      display: block;
+      margin-bottom: 9px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
     min-height: 0;
     padding: 0;
   }

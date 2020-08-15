@@ -26,6 +26,10 @@
     animation-duration: 2s;
   }
 
+  &:focus + .form__icon {
+    fill: @green;
+  }
+
   &:active {
     border: 1px solid transparent;
     box-shadow: inset 0 0 0 2px @grey;
@@ -35,6 +39,18 @@
 
   &:invalid:required:not(:placeholder-shown) {
     box-shadow: inset 0 0 0 2px @error;
+  }
+
+  &:invalid:required:not(:placeholder-shown) + .form__icon {
+    fill: @error;
+  }
+
+  &--email {
+    padding-right: 45px;
+  }
+
+  &--tel {
+    padding-right: 45px;
   }
 
   @media (min-width: @tablet-width) {
