@@ -26,18 +26,25 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("./build/css"))
     .pipe(sync.stream())
 }
 exports.styles = styles;
 gulp.task("styles", gulp.series(styles));
 
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("./build"))
+    .pipe(sync.stream());
+}
+exports.html = html;
+
 // Server
 
-const server = (done) => {
+const server = done => {
   sync.init({
     server: {
-      baseDir: "build"
+      baseDir: './build'
     },
     cors: true,
     notify: false,
@@ -46,13 +53,14 @@ const server = (done) => {
   done();
 }
 exports.server = server;
+
 gulp.task ("server", gulp.series(server));
 
   //Watcher
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
 }
 exports.default = gulp.series(styles, server, watcher);
 gulp.task ("watcher", gulp.series(watcher));
@@ -118,17 +126,7 @@ const clean = () => {
 exports.clean = clean;
 gulp.task ("clean", gulp.series(clean));
 
-// Build
-const build = (done) => {
-  gulp.series(
-    clean,
-    copy,
-    styles,
-    sprite
-  );
-  done();
-}
+const build = gulp.series(clean, copy, styles, images, sprite, html);
 exports.build = build;
-
-gulp.task("build", gulp.series(clean, copy, styles, sprite));
-gulp.task("start", gulp.series(build, server));
+// Start
+exports.start = gulp.series(build, server, watcher);
