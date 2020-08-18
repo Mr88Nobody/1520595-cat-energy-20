@@ -1,9 +1,11 @@
 .main-nav--nojs {
-  & .main-nav__toggle {
-    display: none;
-  }
+  @media (max-width: @mobile-width-only) {
+    & .main-nav__toggle {
+      display: none;
+    }
 
-  & .site-list__item {
-    display: block;
+    & .site-list__item {
+      display: block;
+    }
   }
 }

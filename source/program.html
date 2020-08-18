@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Подбор программы Кэт энерджи</title>
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -44,9 +44,15 @@
           <form class="form__data" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrap">
             <div class="form__inform">
-              <label class="form__label form__label--cat-data" for="cat-name">Имя:*<input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required></label>
-              <label class="form__label form__label--cat-data" for="cat-mass">Вес(кг):*<input class="form__input" type="number" id="cat-mass" name="cat-mass" placeholder="7" required></label>
-              <label class="form__label form__label--cat-data" for="cat-age">Возраст(лет):<input class="form__input" type="number" id="cat-age" name="cat-age" placeholder="7"></label>
+              <label class="form__label form__label--cat-data" for="cat-name">Имя:*
+                <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" aria-label="Введите имя кота" required>
+              </label>
+              <label class="form__label form__label--cat-data" for="cat-mass">Вес(кг):*
+                <input class="form__input" type="number" id="cat-mass" name="cat-mass" placeholder="7" aria-label="Укажите вес кота" required>
+              </label>
+              <label class="form__label form__label--cat-data" for="cat-age">Возраст(лет):
+                <input class="form__input" type="number" id="cat-age" name="cat-age" aria-label="Укажите возраст кота" placeholder="7">
+              </label>
             </div>
             <div class="form__option">
               <input class="form__radio" type="radio" id="cat-slim" name="mass-option" value="1" checked>
