@@ -30,13 +30,6 @@
     fill: @green;
   }
 
-  &:active {
-    border: 1px solid transparent;
-    box-shadow: inset 0 0 0 2px @grey;
-    animation-name: outline;
-    animation-duration: 2s;
-  }
-
   &:invalid:required:not(:placeholder-shown) {
     box-shadow: inset 0 0 0 2px @error;
   }
