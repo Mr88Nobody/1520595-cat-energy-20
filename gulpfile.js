@@ -30,7 +30,7 @@ const styles = () => {
     .pipe(sync.stream())
 }
 exports.styles = styles;
-gulp.task("styles", gulp.series(styles));
+// gulp.task("styles", gulp.series(styles));
 
 const html = () => {
   return gulp.src("source/*.html")
@@ -54,7 +54,7 @@ const server = done => {
 }
 exports.server = server;
 
-gulp.task ("server", gulp.series(server));
+// gulp.task ("server", gulp.series(server));
 
   //Watcher
 
@@ -63,7 +63,7 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("html"));
 }
 exports.default = gulp.series(styles, server, watcher);
-gulp.task ("watcher", gulp.series(watcher));
+// gulp.task ("watcher", gulp.series(watcher));
 
 // Sprite
 
@@ -74,7 +74,7 @@ const sprite = () => {
     .pipe(gulp.dest("build/img"))
 }
 exports.sprite = sprite;
-gulp.task ("sprite", gulp.series(sprite));
+// gulp.task ("sprite", gulp.series(sprite));
 
 // Webp image
 
@@ -85,7 +85,7 @@ const createWebp = () => {
     .pipe(gulp.dest("source/img"))
 }
 exports.createWebp = createWebp;
-gulp.task ("createWebp", gulp.series(createWebp));
+// gulp.task ("createWebp", gulp.series(createWebp));
 
 // Imagemin
 
@@ -99,7 +99,7 @@ const images = () => {
     ]))
 }
 exports.images = images;
-gulp.task ("images", gulp.series(images));
+// gulp.task ("images", gulp.series(images));
 
 // Copy in build
 
@@ -116,7 +116,7 @@ const copy = () => {
   .pipe(gulp.dest("build"))
 }
 exports.copy = copy;
-gulp.task ("copy", gulp.series(copy));
+// gulp.task ("copy", gulp.series(copy));
 
 // clean build
 
@@ -124,7 +124,7 @@ const clean = () => {
   return del("build")
 }
 exports.clean = clean;
-gulp.task ("clean", gulp.series(clean));
+// gulp.task ("clean", gulp.series(clean));
 
 const build = gulp.series(clean, copy, styles, images, sprite, html);
 exports.build = build;
