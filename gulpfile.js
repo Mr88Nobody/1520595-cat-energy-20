@@ -62,7 +62,7 @@ const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
 }
-exports.default = gulp.series(styles, server, watcher);
+exports.default = gulp.series(styles, html, server, watcher);
 // gulp.task ("watcher", gulp.series(watcher));
 
 // Sprite

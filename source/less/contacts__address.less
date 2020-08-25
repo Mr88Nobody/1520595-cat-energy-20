@@ -9,11 +9,20 @@
   margin: 0;
   width: 140px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    margin: 0;
     width: 159px;
+    min-height: 80px;
     text-align: right;
+    padding-top: 7px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
