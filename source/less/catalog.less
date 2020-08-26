@@ -1,0 +1,374 @@
+.catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item {
+  padding: 0;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+
+  &--all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -40vw;
+      width: 200vw;
+      height: 1px;
+      background-color: @grey-h;
+    }
+
+    &--all {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -40vw;
+        width: 200vw;
+        height: 1px;
+        background-color: @grey-h;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 430px;
+    width: 324px;
+    margin-bottom: 140px;
+    padding: 0;
+    text-align: center;
+    background-color: @grey-f;
+
+    &:nth-last-child(2),
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+
+    &--all {
+      background: none;
+      border: 2px solid @grey-f;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 145px;
+    }
+  }
+}
+
+.catalog__item-desc {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.catalog__pic {
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: @tablet-width) {
+    &--small {
+      width: 324px;
+      height: 174px;
+      position: relative;
+      top: @tablet-margin-pic-s;
+      margin-bottom: @tablet-margin-pic-s;
+    }
+
+    &--big {
+      width: 324px;
+      height: 208px;
+      position: relative;
+      top: @tablet-margin-pic-b;
+      margin-bottom: -79px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--small {
+      width: 245px;
+      height: 174px;
+      position: relative;
+      top: @desktop-margin-pic-s;
+      margin-bottom: @desktop-margin-pic-s;
+    }
+
+    &--big {
+      width: 245px;
+      height: 208px;
+      position: relative;
+      top: @desktop-margin-pic-b;
+      margin-bottom: -86px;
+    }
+  }
+}
+
+.catalog__item-wrapper {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
+}
+
+.catalog__item-link {
+  text-decoration: none;
+}
+
+.catalog__item-headline {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: @dark-grey;
+  width: 76px;
+  padding: 0;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 18px;
+
+  &--all {
+    width: auto;
+    margin-top: 79px;
+    margin-bottom: 8px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: -41px;
+      left: 87px;
+      background-color: @grey-plus;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 174px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 21px;
+
+    &--all {
+      line-height: 22px;
+      margin-top: 161px;
+      margin-bottom: 23px;
+
+      &::before,
+      &::after {
+        top: -81px;
+        left: 57px;
+        width: 60px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+    width: 145px;
+    margin-top: 44px;
+    margin-bottom: 22px;
+
+    &--all {
+      margin-top: 159px;
+
+      &::before,
+      &::after {
+        top: -79px;
+        left: 42px;
+        width: 60px;
+      }
+    }
+  }
+}
+
+.catalog__table {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: @grey;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  & td {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.catalog__table-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @grey-c;
+    padding-top: 5px;
+    padding-bottom: 9px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 4px;
+    padding-top: 6px;
+    width: 170px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+.catalog__button {
+  display: block;
+  line-height: 20px;
+  padding-top: 10px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: @green-h;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--all {
+    color: @grey;
+    background-color: @grey-f;
+
+    &:hover,
+    &:focus {
+      background-color: @grey-h;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin-bottom: 40px;
+
+    &--extra {
+      width: 632px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+
+    &--extra {
+      width: 244px;
+    }
+  }
+}
+
+.catalog__legend {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+  color: @dark-grey;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+  }
+}

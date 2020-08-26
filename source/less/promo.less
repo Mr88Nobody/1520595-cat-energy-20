@@ -52,3 +52,136 @@
     position: relative;
   }
 }
+
+.promo__headline {
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: @white;
+  width: 249px;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @black;
+    width: 414px;
+    margin-top: 64px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+    margin-top: 111px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50vw;
+      height: 696px;
+      background: @background url("../img/index-background-desktop@1x.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      z-index: -1;
+      top: -226px;
+      left: 530px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background: @background url("../img/index-background-desktop@2x.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 720px auto;
+      }
+    }
+  }
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  color: @white;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.promo__pic {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin: 0;
+    order: 1;
+    position: absolute;
+    top: 263px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 552px;
+    height: 499px;
+    padding: 0;
+    order: 1;
+    position: absolute;
+    top: 32px;
+    left: 448px;
+  }
+}
+
+.promo__button {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 11px;
+  margin: 0;
+
+  &:hover {
+    background-color: @green-h;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    height: 54px;
+    z-index: 2;
+    order: 2;
+    padding-top: 14px;
+    position: relative;
+    left: -5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 0;
+  }
+}

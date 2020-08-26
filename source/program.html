@@ -45,29 +45,29 @@
           <p class="form__headline">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <form class="form__data" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrap">
-            <div class="form__inform">
-              <label class="form__label form__label--cat-data" for="cat-name">Имя:*
-                <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" aria-label="Введите имя кота" required>
-              </label>
-              <label class="form__label form__label--cat-data" for="cat-mass">Вес(кг):*
-                <input class="form__input" type="number" id="cat-mass" name="cat-mass" placeholder="7" aria-label="Укажите вес кота" required>
-              </label>
-              <label class="form__label form__label--cat-data" for="cat-age">Возраст(лет):
-                <input class="form__input" type="number" id="cat-age" name="cat-age" aria-label="Укажите возраст кота" placeholder="7">
-              </label>
-            </div>
-            <div class="form__option">
-              <input class="form__radio" type="radio" id="cat-slim" name="mass-option" value="1" checked>
-              <label class="form__label form__label--cat-prog" for="cat-slim">Похудение</label>
-              <input class="form__radio" type="radio" id="cat-gain" name="mass-option" value="2">
-              <label class="form__label form__label--cat-prog" for="cat-gain">Набор массы</label>
-              <input class="form__radio" type="radio" id="cat-advice" name="mass-option" value="3">
-              <label class="form__label form__label--cat-prog" for="cat-advice">Не знаю (Нужен ваш совет)</label>
-            </div>
+              <div class="form__inform">
+                <label class="form__label form__label--cat-data" for="cat-name">Имя:*
+                  <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" aria-label="Введите имя кота" required>
+                </label>
+                <label class="form__label form__label--cat-data" for="cat-mass">Вес&nbsp;(кг):*
+                  <input class="form__input form__input--mass" type="number" id="cat-mass" name="cat-mass" placeholder="7" aria-label="Укажите вес кота" required>
+                </label>
+                <label class="form__label form__label--cat-data" for="cat-age">Возраст&nbsp;(лет):
+                  <input class="form__input form__input--age" type="number" id="cat-age" name="cat-age" aria-label="Укажите возраст кота" placeholder="7">
+                </label>
+              </div>
+              <div class="form__option">
+                <input class="form__radio" type="radio" id="cat-slim" name="mass-option" value="1" checked>
+                <label class="form__label form__label--cat-prog" for="cat-slim">Похудение</label>
+                <input class="form__radio" type="radio" id="cat-gain" name="mass-option" value="2">
+                <label class="form__label form__label--cat-prog" for="cat-gain">Набор массы</label>
+                <input class="form__radio" type="radio" id="cat-advice" name="mass-option" value="3">
+                <label class="form__label form__label--cat-prog" for="cat-advice">Не знаю (Нужен ваш совет)</label>
+              </div>
             </div>
             <h2 class="form__title form__title--contacts">Контактные данные (владельца кота)</h2>
             <div class="form__contacts">
-              <label class="form__label form__label--email" for="email">email:*
+              <label class="form__label form__label--email" for="email">e&#8209;mail:*
                 <input class="form__input form__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__icon form__icon--email" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -177,6 +177,9 @@
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
+      var contactsMap = document.querySelector('.contacts__map');
+
+      contactsMap.classList.remove('contacts__map--nojs');
 
       navMain.classList.remove('main-nav--nojs');
 

@@ -463,7 +463,7 @@ img {
   }
 }
 .program__text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
@@ -716,7 +716,7 @@ img {
   }
 }
 .desc__text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -780,7 +780,7 @@ img {
 }
 .copy__link {
   display: block;
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: none;
@@ -993,7 +993,7 @@ img {
   }
 }
 .catalog__table {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 12px;
@@ -1053,7 +1053,7 @@ img {
   }
 }
 .catalog__legend {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1073,7 +1073,7 @@ img {
   }
 }
 .example__text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1099,7 +1099,7 @@ img {
   }
 }
 .stats__desc {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -1199,7 +1199,7 @@ img {
   }
 }
 .contacts__address {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -1332,7 +1332,7 @@ img {
   }
 }
 .extra-table__item {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -1373,7 +1373,7 @@ img {
   }
 }
 .extra__gift-text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: none;
@@ -1646,7 +1646,7 @@ img {
   }
 }
 .form__legend {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial, "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
