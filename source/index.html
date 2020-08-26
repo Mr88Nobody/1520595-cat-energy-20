@@ -168,8 +168,8 @@
             </div>
             <div class="slider__range">
               <span class="slider__button slider__button--before">Было</span>
-              <input class="slider__check" id="slider" type="checkbox">
-              <label class="slider__select" for="slider"></label>
+              <!-- <input class="slider__check" id="slider" type="checkbox"> -->
+              <div class="slider__select"></div>
               <span class="slider__button slider__button--after">Стало</span>
             </div>
           </div>
@@ -251,21 +251,21 @@
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
       var sliderCheck = document.querySelector('.slider__check');
-      var picSlim = document.getElementById('picSlim');
-      var picFat = document.getElementById('picFat');
+      // var picSlim = document.getElementById('picSlim');
+      // var picFat = document.getElementById('picFat');
       var contactsMap = document.querySelector('.contacts__map');
 
       contactsMap.classList.remove('contacts__map--nojs');
 
-      sliderCheck.addEventListener('click', function () {
-        if (sliderCheck.checked === true) {
-          picFat.style.display = 'none';
-          picSlim.style.display = 'block';
-        } else {
-          picFat.style.display = 'block';
-          picSlim.style.display = 'none';
-        }
-      });
+      // sliderCheck.addEventListener('click', function () {
+      //   if (sliderCheck.checked === true) {
+      //     picFat.style.display = 'none';
+      //     picSlim.style.display = 'block';
+      //   } else {
+      //     picFat.style.display = 'block';
+      //     picSlim.style.display = 'none';
+      //   }
+      // });
 
       navMain.classList.remove('main-nav--nojs');
 

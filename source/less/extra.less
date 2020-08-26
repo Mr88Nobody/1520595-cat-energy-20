@@ -207,6 +207,30 @@
   }
 }
 
+.extra__button {
+  display: block;
+  line-height: 20px;
+  padding-top: 10px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: @green-h;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
+
 .extra__gift {
   margin-top: 39px;
   margin-bottom: 35px;
